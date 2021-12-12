@@ -1,0 +1,28 @@
+.step
+  margin-bottom: 150px
+  &__inner
+    display: flex
+  &__img
+    flex-basis: 600px
+    object-fit: cover
+  &__content
+    margin-right: 90px
+  &__list
+    list-style: none
+    counter-reset: number
+
+    &-item
+      counter-increment: number
+      margin-bottom: 30px
+      &::before
+        content: '0' counter(number)
+        margin-bottom: 11px
+        color: #868585
+      &:nth-child(n + 10)
+        &::before
+          content: counter(number)
+    &-title
+      margin-bottom: 2px
+      font-size: 18px
+      line-height: 25px
+      font-weight: 700

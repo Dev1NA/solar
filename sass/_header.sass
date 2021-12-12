@@ -1,0 +1,48 @@
+.header
+  background-image: url('../images/header-bg.jpg')
+  height: 100vh
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  color: #fff
+  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding: 70px 10px 38px
+  margin-bottom: 150px
+  &__subtitle
+    font-style: 18px
+    line-height: 25px
+    font-weight: 400
+    margin-top: auto
+  &__title
+    font-weight: 700
+    line-height: 87px
+    font-size: 64px
+    & span
+      display: block
+      font-size: 42px
+      line-height: 57px
+  &__button
+    margin-top: 50px
+    margin-bottom: auto
+.button
+  align-self: center
+  &:hover
+    .button__path
+      fill: #A9A32A
+  &__path
+    transition: fill .5s
+  &__text
+    display: inline-block
+    font-size: 18px
+    line-height: 25px
+    transform: translateY(-17px)
+    margin-left: -57px
+.social
+  display: flex
+  justify-content: center
+  align-items: center
+  &__item
+    padding: 0 10px
